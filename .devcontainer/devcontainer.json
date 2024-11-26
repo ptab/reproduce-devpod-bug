@@ -14,9 +14,9 @@
   //  "postCreateCommand": {
   //    "fetch": "git fetch"
   //  }
-  
+
   // 👇 fails with 'git@github.com: Permission denied (publickey).'
-  //  "postCreateCommand": "mkdir ~/.ssh && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts && git fetch"
+  "postCreateCommand": "mkdir ~/.ssh && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts && git fetch"
 
   // 👇 fails with 'git@github.com: Permission denied (publickey).'
   //  "postCreateCommand": {
