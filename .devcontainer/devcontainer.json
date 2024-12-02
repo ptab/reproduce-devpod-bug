@@ -3,25 +3,5 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
-
-  // 👇 fails with 'Host key verification failed.'
-  //    "postCreateCommand": "git fetch",
-
-  // 👇 fails with 'Host key verification failed.'
-  //    "postCreateCommand": ["git", "fetch"],
-
-  // 👇 fails with 'Host key verification failed.'
-  //  "postCreateCommand": {
-  //    "fetch": "git fetch"
-  //  }
-
-  // 👇 fails with 'git@github.com: Permission denied (publickey).'
-  "postCreateCommand": "mkdir ~/.ssh && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts && git fetch"
-
-  // 👇 fails with 'git@github.com: Permission denied (publickey).'
-  //  "postCreateCommand": {
-  //    "git-fetch": "mkdir ~/.ssh && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts && git fetch"
-  //  },
-
 }
 
