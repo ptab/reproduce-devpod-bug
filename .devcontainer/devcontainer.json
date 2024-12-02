@@ -3,5 +3,6 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
+  "postCreateCommand": "mkdir ~/.ssh && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts",
 }
 
